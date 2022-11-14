@@ -55,7 +55,7 @@ mat_poetry_reviews = get_genre_reviews_matrix('poetry')
 # show ui
 
 st.title('What to read?')
-genre = ['Poetry', 'Children', 'Fantasy and Paranrmal', 'History and Biography', 'Mystery, Thriller and Crime', 'Romance', 'Young Adult', 'Comics and Graphic']
+genre = ['Poetry', 'Children', 'History and Biography', 'Mystery, Thriller and Crime', 'Young Adult', 'Comics and Graphic']
 genre_extended = ['Choose below']
 genre_extended.extend(sorted(genre))
 search_genre = st.selectbox('Select your favorite genre', options = genre_extended)

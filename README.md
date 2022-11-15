@@ -124,23 +124,28 @@ Then finally, I looked at the thickest books
 |Fantasy and Paranormal|J.K. Rowling|5036.04|
 
 Finally, the reviews and ratings dataframe was downloaded and cleaned (mostly just removed the unnecessary columns) and saved to the dataframe. 
+In the Recommend_eng.ipynb file I figured out that the review files were too large so I had to take one rating and reviwe per book and take only top 100000 books. I understand that this limits the efficiency of the engine, but even with these cuts, it takes a while to load. With original foles, my computer just crashed ater trying to build a pivot table. 
 
 ---
 
 ## Preprocessing & Modeling
 
 For the recommendation engine  first used cosine similarity, which worked. Then for simplicity or building an app, I decided to use the nearest neighbors algorithm which is the same as K nearest which is used for clustering based on euclidian distance.
-We used content-based filtering, whcich is mainly based on the description of the product or the keywords of the name of the product. Which means if you liked a book in category 'X', you will get recommendations to read books from the same category only. 
-For this model, I used nearest neighbor model with metric cosine and the algorithm 'brute', which means find the distance of every point to every other point. In order to match the book (keyword) with the existing books in the data sets, I used FuzzyWuzzy Library that amkes string matching very simple. I used the process module to only extract one string with the highest similarity score by calling the extractOne() function. Then, the model finds the nearest neighbors to the input book id and after that, it will print the top 10 books which are closer to those books.
+We used content-based filtering, which is mainly based on the description of the product or the keywords of the name of the product. Which means if you liked a book in category 'X', you will get recommendations to read books from the same category only. 
+For this model, I used nearest neighbor model with metric cosine and the algorithm 'brute', which means find the distance of every point to every other point. In order to match the book (keyword) with the existing books in the data sets, I used FuzzyWuzzy Library that makes string matching very simple. I used the process module to only extract one string with the highest similarity score by calling the extractOne() function. Then, the model finds the nearest neighbors to the input book id and after that, it will print the top 10 books which are closer to those books.
 
     Installing FuzzyWuzzy:
     pip install fuzzywuzzy
 
 As it can be seen from the code, I used both cosine and nearest neighbors approaches. These two gave out different results, which is expected. But there's no way to check if it is correct since it's unsupervised modelling. 
 
+
 #### Web application
 
 The preliminary app was created for each genre using streamlit. It lets the user choose the genre and enter the name of the book they recentry liked or the keyword that the title of that book has. As a result, the app gives the full title of the selected book, and the list of books that are the closest to the book mentioned by the user. It also gives the book id and the authors names for each suggested book. 
+For the model to run, it is important to copy the cleaned datasets, review datasets as well into the 'models' folder (manually)
+Note that it will take a long time for the app to load, be patient... 
+But once it's loaded, all the large data is cached so it won't have to be loaded again, unless you run it again from the terminal. 
 
 ---
 
@@ -150,4 +155,5 @@ The recommendation engine can successfully give suggestions on the books from 8 
 The app that was developed can be used for a simpler user interface. 
 For future work, it would be nice to do this recommendation app based on the description of the book. For example the user would like to read about 'war' and it would suggest the books that are about war. Also there's a large dataset that was conveniently broken down into smaller datasets (by genre) for faster usage, but it would be interesting to see if the recommendation engine would work differently on the bigger dataset. In these smaller (genre) datasets there are about 40% of books that don't have the description at all, so this information will have to be scraped manually from somewhere else. 
 Also, I used the books written in all languages, but it would be nice to remove the books that are not in english and leave the books that are in english only. It will take some time as well, since a lot of the books don't have information about the language they're written in, also the reviews and ratings datasets would have to be cleanned from the same list of books, so that the amount of books are the same in all datasets. 
-
+As mentioned previously, due to the lack of memory, I had to cut the reviews and ratings datasets. In the future, I'll try to fix this issue to see if the results would be different if I load the whole dataset.
+Nonetheless, the book recommendation system has been created successfully and it works. 

@@ -114,14 +114,14 @@ Then finally, I looked at the thickest books
 
 |Genre|Book Title|Number of pages|	
 |---|---|---|
-|Children|The new junior classics||
-|Comics and Graphic|Robert Kirkman|2316.04|
-|History and Biography|Bernard Cornwell|2467.76|
-|Mystery, Thriller and Crime|Arthur Conan Doyle|4270.32|
-|Poetry|William Shakespeare|1385.62|
-|Young Adult|Cassandra Clare|3431.44|
-|Romance|Nora Roberts|5060.45|
-|Fantasy and Paranormal|J.K. Rowling|5036.04|
+|Children|The new junior classics|4500.0|
+|Comics and Graphic|Homestuck|37000.0|
+|History and Biography|Great Books of the Western World|37000.0|
+|Mystery, Thriller and Crime|Perry's Killer Playlist (Perry & Gobi, #2)|52015.0|
+|Poetry|The Norton Shakespeare|1385.62|
+|Young Adult|Perry's Killer Playlist (Perry & Gobi, #2)|52015.0|
+|Romance|Rogue on the Rollaway|82000.0|
+|Fantasy and Paranormal|Rogue on the Rollaway|82000.0|
 
 Finally, the reviews and ratings dataframe was downloaded and cleaned (mostly just removed the unnecessary columns) and saved to the dataframe. 
 In the Recommend_eng.ipynb file I figured out that the review files were too large so I had to take one rating and reviwe per book and take only top 100000 books. I understand that this limits the efficiency of the engine, but even with these cuts, it takes a while to load. With original foles, my computer just crashed ater trying to build a pivot table. 
@@ -157,3 +157,11 @@ For future work, it would be nice to do this recommendation app based on the des
 Also, I used the books written in all languages, but it would be nice to remove the books that are not in english and leave the books that are in english only. It will take some time as well, since a lot of the books don't have information about the language they're written in, also the reviews and ratings datasets would have to be cleanned from the same list of books, so that the amount of books are the same in all datasets. 
 As mentioned previously, due to the lack of memory, I had to cut the reviews and ratings datasets. In the future, I'll try to fix this issue to see if the results would be different if I load the whole dataset.
 Nonetheless, the book recommendation system has been created successfully and it works. 
+
+---
+## Sources
+https://stackoverflow.com/
+https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-recommendation-engine-python/
+https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home
+https://www.goodreads.com/
+General Assembly lecture notes 

@@ -163,5 +163,5 @@ Nonetheless, the book recommendation system has been created successfully and it
 https://stackoverflow.com/
 https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-recommendation-engine-python/
 https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home
-https://www.goodreads.com/
+https://www.goodreads.com/  \
 General Assembly lecture notes 

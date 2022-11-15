@@ -51,14 +51,14 @@ First, I looked at the top rated books, i.e the books that have the highest aver
 
 |Genre|Book|
 |---|---|
-|Children| |
-|Poetry| |
-|History and Biography| |
-|Mystery, Thriller and Crime| |
-|Young Adult| |
-|Comics and Graphic| |
-|Romance| |
-|Fantasy and Paranormal| |
+|Children|Harry Potter and the Prisoner of Azkaban ()|
+|Poetry|The Complete Stories and Poems|
+|History and Biography| A Voice in the Wind (Mark of the Lion, #1)|
+|Mystery, Thriller and Crime|The Complete Sherlock Holmes|
+|Young Adult|Crooked Kingdom (Six of Crows, #2)|
+|Comics and Graphic|The Essential Calvin and Hobbes: A Calvin and|
+|Romance|Lady Midnight (The Dark Artifices, #1)|
+|Fantasy and Paranormal|Words of Radiance (The Stormlight Archive, #2)|
 
 Then looked which books have the most amount of reviews:
 

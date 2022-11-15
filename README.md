@@ -31,9 +31,7 @@ Develop a basic webapp to check usability of the model for book suggestions
 
 ## Data Collection
 
-There are 8 datasets that were used for this project. One for each genre (Poetry, Children, History and Biography, Mystery Thriller and Crime, Young Adult, Comics and Graphic).
-
-There are two more datasets that can be downloaded and added to the project, but they're quite large (Romance, Fantasy and Paranormal). 
+There are 8 datasets that were used for this project. One for each genre (Poetry, Children, History and Biography, Mystery Thriller and Crime, Young Adult, Comics and Graphic, Romance, Fantasy and Paranormal).
 
 These genre dataframes were pulled from the [UCSD](https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home), which were collected in late 2017 from [goodreads.com](https://www.goodreads.com/). 
 These datasets contain book information, but only author id, so author information as well as the ratings and reviews datasets hve to be downloaded separately. It can be done form the same page mentioned above. 
@@ -114,7 +112,16 @@ And looked at the top rated authors, which we can see that some of them are from
 
 Then finally, I looked at the thickest books 
 
-
+|Genre|Book Title|Number of pages|	
+|---|---|---|
+|Children|The new junior classics||
+|Comics and Graphic|Robert Kirkman|2316.04|
+|History and Biography|Bernard Cornwell|2467.76|
+|Mystery, Thriller and Crime|Arthur Conan Doyle|4270.32|
+|Poetry|William Shakespeare|1385.62|
+|Young Adult|Cassandra Clare|3431.44|
+|Romance|Nora Roberts|5060.45|
+|Fantasy and Paranormal|J.K. Rowling|5036.04|
 
 Finally, the reviews and ratings dataframe was downloaded and cleaned (mostly just removed the unnecessary columns) and saved to the dataframe. 
 

@@ -51,46 +51,70 @@ First, I looked at the top rated books, i.e the books that have the highest aver
 
 |Genre|Book|
 |---|---|
-|Children|Harry Potter and the Prisoner of Azkaban ()|
+|Children|Harry Potter and the Prisoner of Azkaban (Harry Potter #3)|
 |Poetry|The Complete Stories and Poems|
 |History and Biography| A Voice in the Wind (Mark of the Lion, #1)|
 |Mystery, Thriller and Crime|The Complete Sherlock Holmes|
 |Young Adult|Crooked Kingdom (Six of Crows, #2)|
-|Comics and Graphic|The Essential Calvin and Hobbes: A Calvin and|
+|Comics and Graphic|The Essential Calvin and Hobbes: A Calvin and Hobbes Treasury|
 |Romance|Lady Midnight (The Dark Artifices, #1)|
 |Fantasy and Paranormal|Words of Radiance (The Stormlight Archive, #2)|
 
-Then looked which books have the most amount of reviews:
+Then, looked which books have the most amount of reviews:
 
 |Genre|Book|
 |---|---|
-|Children| |
-|Poetry| |
-|History and Biography| |
-|Mystery, Thriller and Crime| |
-|Young Adult| |
-|Comics and Graphic| |
-|Romance| |
-|Fantasy and Paranormal| |
+|Children|The Giver (The Giver, #1)|
+|Poetry|Milk and Honey|
+|History and Biography|The Book Thief|
+|Mystery, Thriller and Crime|The Girl on the Train|
+|Young Adult|The Hunger Games (The Hunger Games, #1)|
+|Comics and Graphic|Watchmen|
+|Romance|Fifty Shades of Grey (Fifty Shades, #1)|
+|Fantasy and Paranormal|Twilight (Twilight, #1)|
 
-Then looked at the top voted books, the books that have the most amount of ratings: 
+Then, the books that have the most amount of ratings: 
 
 |Genre|Book|
 |---|---|
-|Children| |
-|Poetry| |
-|History and Biography| |
-|Mystery, Thriller and Crime| |
-|Young Adult| |
-|Comics and Graphic| |
-|Romance| |
-|Fantasy and Paranormal| |
+|Children|Harry Potter and the Prisoner of Azkaban (Harry Potter #3)|
+|Poetry|Where the Sidewalk Ends|
+|History and Biography|To Kill a Mockingbird|
+|Mystery, Thriller and Crime|Angels & Demons (Robert Langdon, #1)|
+|Young Adult|The Hunger Games (The Hunger Games, #1)|
+|Comics and Graphic|Watchmen|
+|Romance|Pride and Prejudice|
+|Fantasy and Paranormal|Harry Potter and the Sorcerer's Stone (Harry Potter #1)|
 
 Looked at authors who wrote the most amount of books, which gave me quite expected results: 
 
+|Genre|Author's name| Amount of books|	
+|---|---|---|
+|Children|Enid Blyton|739|
+|Comics and Graphic|Brian Michael Bendis|806|
+|History and Biography|Charles River Editors|357|
+|Mystery, Thriller and Crime|Agatha Christie|2094|
+|Poetry|Kahlil Gibran|208|
+|Young Adult|Francine Pascal|470|
+|Romance|Nora Roberts|1438|
+|Fantasy and Paranormal|Terry Pratchett|846|
+
 And looked at the top rated authors, which we can see that some of them are from the group of authors that wrote the most abount of books
 
+|Genre|Author's name|Total rating|	
+|---|---|---|
+|Children|Roald Dahl|2577.56|
+|Comics and Graphic|Robert Kirkman|2316.04|
+|History and Biography|Bernard Cornwell|2467.76|
+|Mystery, Thriller and Crime|Arthur Conan Doyle|4270.32|
+|Poetry|William Shakespeare|1385.62|
+|Young Adult|Cassandra Clare|3431.44|
+|Romance|Nora Roberts|5060.45|
+|Fantasy and Paranormal|J.K. Rowling|5036.04|
+
 Then finally, I looked at the thickest books 
+
+
 
 Finally, the reviews and ratings dataframe was downloaded and cleaned (mostly just removed the unnecessary columns) and saved to the dataframe. 
 
